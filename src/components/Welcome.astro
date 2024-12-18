@@ -1,6 +1,8 @@
 ---
 import astroLogo from "../assets/astro.svg";
 import background from "../assets/background.svg";
+import H1 from "./H1.astro";
+import Main from "./Main.astro";
 
 interface Props {
   title: string;
@@ -17,7 +19,10 @@ const {
 
 <div id="container">
   <img id="background" src={background.src} alt="" fetchpriority="high" />
-  <main>
+  <Main>
+    <H1 text="Welcome to Astro! 24.1217 1119" />
+  </Main>
+  <!-- <main>
     <section id="hero">
       <a href="https://astro.build"
         ><img
@@ -63,7 +68,7 @@ const {
         </a>
       </section>
     </section>
-  </main>
+  </main> -->
 
   <a href="https://astro.build/blog/astro-5/" id="news" class="box">
     <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"
